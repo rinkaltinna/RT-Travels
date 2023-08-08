@@ -1,0 +1,220 @@
+#navbar 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-size: 1rem;
+}
+#logo
+{
+    flex-direction: column;
+}
+#logo img
+{
+    height: 50px;
+    width: 50px;
+}
+#navbar ul
+{
+    flex-direction: column;
+    margin-top: 2px ;
+    margin-bottom: 15px;
+
+    
+}
+#navbar ul li
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#navbar ul li button
+{
+    margin: 10px;
+    
+}
+#button button
+{
+    padding: 6px 12px;
+    border-radius: 5px;
+    
+}
+#navbar ul li button a
+{
+    font-size: 1rem;
+}
+
+.burger {
+    display: block;
+  }
+  .h-nav {
+    height: 50px;
+  }
+  .v-class {
+    opacity: 0;
+  }
+  .logoblock {
+    display: flex;
+  }
+
+#signup
+{
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 15px;
+}
+#heading
+{
+    font-size: 2rem;
+    padding: 20px 0px;
+}
+.btn>button
+{
+    width: 70%;
+    border-radius: 20px;
+}
+
+.label
+{
+    font-size: 1rem;
+    margin-left: 50px;
+}
+.username
+{
+    margin: 5px auto;
+    width: 70%;
+}
+.fullname
+{
+    margin: 5px auto;
+    width: 70%;
+}
+.email
+{
+    margin: 5px auto;
+    width: 70%;
+}
+.password
+{
+    margin: 5px auto;
+    width: 70%;
+}
+.forgot
+{
+    display: inline-block;
+    left: 15%;
+    margin-top: 5px;
+}
+.agree
+{
+    display: inline-block;
+    left: 15%;
+    margin-top: 5px;
+}
+.googlesignup
+{
+    flex-direction: column;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+.googlesignup>button
+{
+    margin: 10px auto;
+    font-size: 1rem;
+    width: 70%;
+}
+.btn
+{
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+.login
+{
+    padding-bottom: 20px;
+}
+.google
+{
+    margin-top: 10px;
+}
+.googlesignup>button
+{
+    margin: 7px auto;
+}
+
+.info
+{
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.footerlogo
+{
+    margin: 0px;
+    margin-top: 10px;
+    
+}
+.footerlogo img
+{
+    height: 60px;
+    width: 60px;
+    display: block;
+    margin: 0px auto;
+}
+footer>hr
+{
+    width: 94%;
+}
+.subscribe
+{
+    
+    margin: 10px 14px;
+}
+.subscribeinfo
+{
+
+    margin: 18px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.connect {
+    margin: 30px 0px 20px 0px;
+}
+.callus {
+    margin: 30px 0px 20px 0px;
+}
+.call
+{
+    margin-bottom: 0px;
+}
+.getemail
+{
+    display: flex;
+    justify-content: center;
+}
+.rights
+{
+    flex-direction: column-reverse;
+    padding: 10px 0px;
+}
+.terms a
+{
+    font-size: 1rem;
+    margin: 0px 5px;
+}
+.copy
+{
+    text-align: center;
+    margin: 5px 5px;
+    margin-top: 10px;
+}
+.getemail input
+{
+    padding: 6px 10px;
+
+}
+.getemail button
+{
+    padding: 6px 10px;
+}

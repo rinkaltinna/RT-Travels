@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Calistoga&family=Castoro+Titling&family=Pridi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "logo ul ul ul ul button";
+  background: #002b27;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  font-family: "Ysabeau Infant", sans-serif;
+  z-index: 1;
+  color: white;
+  
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+#logo img {
+  height: 70px;
+  width: 70px;
+
+  /* margin: 0px 19px; */
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+  /* justify-content: center; */
+  align-items: center;
+}
+#navbar ul li {
+  margin: 0px 19px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#navbar ul li a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 1px 2px black;
+}
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* position: relative;
+  left: 250px; */
+}
+#button button {
+  margin: 0px 8px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002b27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#button button:hover {
+  transform: scale(1.1);
+}
+
+#button button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+  position: absolute;
+  left: 2%;
+  top: 0px;
+  display: none;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  /* margin: 0px 19px; */
+}
+.burger
+{
+   position: absolute;
+   right: 5%;
+   top: 10px;
+   display: none;
+   cursor: pointer;
+}
+.line 
+{
+  width: 33px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 5px 3px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ysabeau Infant", sans-serif;
+    margin: 3rem 0;
+    margin-top: 1.5rem;
+  }
+
+  .name
+  {
+    display: flex;
+    margin: 0px auto;
+    margin-top: 3rem;
+    width: 66%;
+    
+    align-items: center;
+    
+  }
+
+  .logo img
+  {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    
+  }
+  .author
+  {
+    margin-left: 15px;
+    font-size: 1.1rem;
+    font-family: "Ysabeau Infant", sans-serif;
+
+  }
+  
+  .photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    
+  }
+  .photo img {
+    height: 500px;
+    width: 1000px;
+    display: block;
+    margin: 0px auto;
+  }
+  .head {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .type {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .para {
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+  .day img
+  {
+    
+    width: 750px;
+    height: 375px;
+    margin: 10px 0px;
+  }
+  .parahead
+  {
+    font-weight: bold;
+    
+    margin-bottom: 7px;
+    font-size: 1.1rem;
+  }
+
+#allblogs a
+{
+  color: black;
+  padding: 4px 8px;
+  /* text-decoration: none; */
+  font-size: 1.3rem;
+}
+#allblogs  a:hover
+{
+  background-color: rgba(0, 0, 0, 0.764);
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+
+
+footer {
+    background-color: #002b27;
+    color: white;
+    font-family: "Ysabeau Infant", sans-serif;
+  }
+  footer > hr {
+    border: none;
+    border-top: 2px solid white;
+    width: 91%;
+    margin: auto;
+    text-align: center;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 30px;
+  }
+  .footerlogo {
+    margin: 20px 0px 15px 20px;
+  }
+  .footerlogo img {
+    height: 80px;
+    width: 80px;
+    margin: 0px 0px -10px 20px;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .subscribe {
+    margin: 20px 0px 15px 20px;
+  }
+  .subscribeinfo {
+    width: 75%;
+    margin-bottom: 10px;
+    margin-top: 18px;
+  }
+  
+  .getemail input {
+    font-size: 1rem;
+  
+    padding: 6px 20px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: "Ysabeau Infant", sans-serif;
+  }
+  
+  ::placeholder {
+    color: white;
+  }
+  
+  .getemail button {
+    margin: 0px 0px;
+    padding: 6px 20px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #045935, #002b27);
+    color: white;
+    cursor: pointer;
+    font-family: "Ysabeau Infant", sans-serif;
+  }
+  .getemail > button > a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .connect {
+    margin: 20px 0px 15px 20px;
+  }
+  
+  .follow {
+    font-size: 1.1rem;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .icons i {
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  .icons a {
+    color: white;
+  }
+  
+  .callus {
+    margin: 20px 0px 15px 20px;
+  }
+  .call {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .calling {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .num {
+    padding: 0px 0px 0px 12px;
+  }
+  .calling a {
+    color: white;
+  }
+  .calling a:visited {
+    color: white;
+  }
+  .rights {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+  }
+  
+  .terms a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+  }
+  .terms a:hover {
+    text-decoration: underline;
+  }

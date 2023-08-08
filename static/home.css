@@ -1,0 +1,770 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Calistoga&family=Castoro+Titling&family=Pridi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "logo ul ul ul ul button";
+  background: #002B27;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  font-family: "Ysabeau Infant", sans-serif;
+  z-index: 1;
+  color: white;
+  
+ 
+ 
+}
+
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+#logo img {
+  height: 70px;
+  width: 70px;
+
+  /* margin: 0px 19px; */
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  /* justify-content: center; */
+  align-items: center;
+}
+#navbar ul li {
+  margin: 0px 19px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#navbar ul li a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 1px 2px black;
+}
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* position: relative;
+  left: 250px; */
+}
+#button button {
+  margin: 0px 8px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002B27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#button button:hover {
+  transform: scale(1.1);
+}
+
+#button button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+  position: absolute;
+  left: 2%;
+  top: 0px;
+  display: none;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  /* margin: 0px 19px; */
+}
+.burger
+{
+   position: absolute;
+   right: 5%;
+   top: 10px;
+   display: none;
+   cursor: pointer;
+}
+.line 
+{
+  width: 33px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 5px 3px;
+}
+
+
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: url('https://i.ibb.co/jGPwG2N/home.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 50px;
+}
+.heading {
+  font-size: 3.5rem;
+  margin-top: 56px;
+  margin-bottom: 43px;
+  font-family: "Acme", sans-serif;
+  color: whitesmoke;
+  text-shadow: 3px 2px 3px black;
+}
+#home p {
+  font-size: 1.5rem;
+  padding: 0px 260px;
+  margin: 25px 0px;
+  font-family: "Ysabeau Infant", sans-serif;
+  color: whitesmoke;
+  text-shadow: 3px 1px 2px #002B27;
+}
+#button1 {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002B27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  z-index: 0.5;
+  cursor: pointer;
+}
+
+#button1:hover {
+  transform: scale(1.1);
+}
+
+#button1 a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  background: url('https://i.ibb.co/gvY3nfk/about.jpg') no-repeat center center;
+  background-size: cover;
+}
+.box {
+  display: flex;
+  align-items: center;
+  margin: 30px 50px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #002B27;
+  width: 95%;
+  margin: auto;
+}
+.box img {
+  height: 250px;
+  width: 450px;
+  border-radius: 25px;
+}
+.para {
+  font-size: 1.5rem;
+  padding: 0px 100px;
+  font-family: "Ysabeau Infant", sans-serif;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#services {
+  background: linear-gradient(to right, #ca8166, #bf9370, #d6d8d7);
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#services > h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 18px 0px;
+  font-family: "Acme", sans-serif;
+  color: whitesmoke;
+  text-shadow: 3px 2px 3px black;
+}
+.sbox {
+  margin: 0px 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#sbox {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 25px;
+}
+#sbox1 {
+  background: url('https://i.ibb.co/NtgdNGR/sbox1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  width: 25%;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+#sbox1:hover {
+  transform: scale(1.1);
+}
+#sbox2 {
+  background: url('https://i.ibb.co/pKxP32x/sbox2.jpg') no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  width: 25%;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+#sbox2:hover {
+  transform: scale(1.1);
+}
+#sbox3 {
+  background: url('https://i.ibb.co/r2Btf66/sbox3.jpg') no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  width: 25%;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+#sbox3:hover {
+  transform: scale(1.1);
+}
+.sheading {
+  font-size: 2rem;
+  margin: 30px 0px;
+  padding: 0px 58px;
+  text-shadow: 3px 2px 2px black;
+}
+.spara {
+  font-size: 1.2rem;
+  padding: 15px 50px;
+  text-shadow: 2px 1px 0px black;
+}
+#sbox3 p {
+  padding: 15px 24px;
+}
+
+#plans {
+  background: linear-gradient(to right, #6074bd, #677d56, #e7ce96);
+  font-family: "Ysabeau Infant", sans-serif;
+  color: whitesmoke;
+}
+
+#plans > h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 20px 12px 50px 10px;
+  /* font-weight: 500; */
+  text-shadow: 3px 2px 3px black;
+  font-family: "Acme", sans-serif;
+  color: whitesmoke;
+}
+
+#tour {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.tour {
+  width: 25%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.tour:hover {
+  transform: scale(1.1);
+}
+#tour1 {
+  background: linear-gradient(to bottom, #7899ff, #e39807, #0035aa);
+}
+#tour2 {
+  background: linear-gradient(to bottom, #8f9fae, #59a600, #e0c749);
+}
+#tour3 {
+  background: linear-gradient(to bottom, #a2b5d5, #b0b0b0, #c1a35a);
+}
+.tour h3 {
+  font-size: 1.6rem;
+  margin: 13px 0px 18px 17px;
+}
+.location {
+  margin: 14px 0px 10px 19px;
+  font-size: 1.3rem;
+}
+.price {
+  font-size: 1.3rem;
+  margin: 4px 0px 15px 19px;
+}
+.book1 {
+  margin: 4px 15px 15px 0px;
+}
+.book1 button {
+  font-size: 1.3rem;
+  margin: 0px 8px;
+  padding: 6px 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #7899ff, #e39807);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+.book1 button:hover {
+  transform: scale(1.1);
+}
+.book2 {
+  margin: 4px 15px 15px 0px;
+}
+.book2 button {
+  font-size: 1.3rem;
+  margin: 0px 8px;
+  padding: 6px 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #8f9fae, #59a600);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+.book2 button:hover {
+  transform: scale(1.1);
+}
+.book3 {
+  margin: 4px 15px 15px 0px;
+}
+.book3 button {
+  font-size: 1.3rem;
+  margin: 0px 8px;
+  padding: 6px 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #a2b5d5, #b0b0b0);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+.book3 button:hover {
+  transform: scale(1.1);
+}
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tour img {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#allplans {
+  text-align: center;
+  padding: 15px 0px 27px 0px;
+}
+
+#allplans button {
+  font-size: 1.3rem;
+  margin: 0px 8px;
+  padding: 6px 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #6074bd, #677d56, #e7ce96);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+#allplans button:hover {
+  transform: scale(1.1);
+}
+#allplans button a
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#community {
+  background-image: linear-gradient(to right, #1a291c, #3b4b38, #524032);
+  font-family: "Ysabeau Infant", sans-serif;
+  color: whitesmoke;
+}
+#community > h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 18px 0px;
+  font-family: "Acme", sans-serif;
+  text-shadow: 3px 2px 3px black;
+  color: whitesmoke;
+}
+
+#cbox1 {
+  display: flex;
+
+  margin-top: 20px;
+}
+#story {
+  background: url('https://i.ibb.co/6FWbfYZ/story.jpg') no-repeat center center;
+  background-size: cover;
+}
+#story > h4 {
+  font-size: 2.5rem;
+  padding: 10px 10px;
+  padding-bottom: 40px;
+  text-align: center;
+  padding-top: 35px;
+  font-weight: 300;
+}
+
+#storypara {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0px 100px;
+  padding-bottom: 50px;
+}
+
+#storycon {
+  display: flex;
+  margin-top: 40px;
+}
+#storyimg img {
+  height: 260px;
+  width: 430px;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+#stories {
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.stories {
+  width: 33%;
+  margin: 0px 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#story1img img {
+  height: 100%;
+  width: 100%;
+}
+
+.storycontent {
+  background-color: #1f3328ca;
+}
+
+.h4-primary {
+  text-align: center;
+  font-size: 2rem;
+  margin: 23px 2px;
+  margin-bottom: 0px;
+  text-shadow: 3px 2px 3px black;
+}
+.h4-secondary {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 3px 2px 3px black;
+}
+.storycontent p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 10px 40px;
+}
+
+.readmore button {
+  margin: 0px 8px;
+  padding: 6px 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002B27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+.readmore button a
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.readmore button:hover {
+  transform: scale(1.1);
+}
+#blogbutton
+{
+  display: flex;
+  justify-content: center;
+}
+#blogbutton button
+{
+  margin: 0px 8px;
+  padding: 6px 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002B27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+#blogbutton button a
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+#blogbutton button:hover {
+  transform: scale(1.1);
+}
+#social {
+  display: flex;
+  background: url('https://i.ibb.co/T0dVMPM/social.jpg') no-repeat center center;
+  background-size: cover;
+  align-items: center;
+}
+#socialheading {
+  text-align: center;
+  font-size: 5rem;
+  margin: 60px 46px;
+  padding: 0px 50px;
+  width: 40%;
+  font-family: "Rubik Dirt", cursive;
+  text-shadow: 3px 2px 3px black;
+}
+#socialcontent {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-right: 50px;
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 1px 2px #5f524c;
+}
+
+#instawall
+{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='250' preserveAspectRatio='none' viewBox='0 0 1440 250'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1548%26quot%3b)' fill='none'%3e%3crect width='1440' height='250' x='0' y='0' fill='rgba(15%2c 66%2c 46%2c 1)'%3e%3c/rect%3e%3cpath d='M9 250L259 0L533.5 0L283.5 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1549%26quot%3b)'%3e%3c/path%3e%3cpath d='M279.6 250L529.6 0L688.6 0L438.6 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1549%26quot%3b)'%3e%3c/path%3e%3cpath d='M507.20000000000005 250L757.2 0L848.7 0L598.7 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1549%26quot%3b)'%3e%3c/path%3e%3cpath d='M755.8000000000001 250L1005.8000000000001 0L1152.8000000000002 0L902.8000000000001 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1549%26quot%3b)'%3e%3c/path%3e%3cpath d='M1400 250L1150 0L892 0L1142 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1550%26quot%3b)'%3e%3c/path%3e%3cpath d='M1190.4 250L940.4000000000001 0L652.4000000000001 0L902.4000000000001 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1550%26quot%3b)'%3e%3c/path%3e%3cpath d='M925.8 250L675.8 0L387.79999999999995 0L637.8 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1550%26quot%3b)'%3e%3c/path%3e%3cpath d='M686.1999999999999 250L436.19999999999993 0L103.19999999999993 0L353.19999999999993 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1550%26quot%3b)'%3e%3c/path%3e%3cpath d='M1247.442907341026 250L1440 57.442907341026114L1440 250z' fill='url(%26quot%3b%23SvgjsLinearGradient1549%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 250L192.5570926589739 250L 0 57.442907341026114z' fill='url(%26quot%3b%23SvgjsLinearGradient1550%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1548'%3e%3crect width='1440' height='250' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1549'%3e%3cstop stop-color='rgba(7%2c 115%2c 93%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(7%2c 115%2c 93%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1550'%3e%3cstop stop-color='rgba(7%2c 115%2c 93%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(7%2c 115%2c 93%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+#instaheading {
+  text-align: center;
+  font-size: 4.5rem;
+  padding: 18px 0px 30px 0px;
+  font-family: "Acme", sans-serif;
+  text-shadow: 3px 2px 3px black;
+  color: whitesmoke;
+}
+#instaphoto {
+  width: 92%;
+  margin: 20px 0px 0px 60px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(300px, 1fr);
+}
+#instaphoto > img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  padding: 20px;
+}
+#instaphoto > video {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+
+footer {
+  background-color: #002B27;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+footer > hr {
+  border: none;
+  border-top: 2px solid white;
+  width: 91%;
+  margin: auto;
+  text-align: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.footerlogo {
+  margin: 20px 0px 15px 20px;
+}
+.footerlogo img {
+  height: 80px;
+  width: 80px;
+  margin: 0px 0px -10px 20px;
+}
+.tagline {
+  font-size: 1rem;
+}
+.subscribe {
+  margin: 20px 0px 15px 20px;
+}
+.subscribeinfo {
+  width: 75%;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+.getemail input {
+  font-size: 1rem;
+
+  padding: 6px 20px;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+::placeholder {
+  color: white;
+}
+
+.getemail button {
+  margin: 0px 0px;
+  padding: 6px 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002B27);
+  color: white;
+  cursor: pointer;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+.getemail > button > a {
+  text-decoration: none;
+  color: white;
+}
+
+.connect {
+  margin: 20px 0px 15px 20px;
+}
+
+.follow {
+  font-size: 1.1rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.icons i {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.icons a {
+  color: white;
+}
+
+.callus {
+  margin: 20px 0px 15px 20px;
+}
+.call {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.calling {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.num {
+  padding: 0px 0px 0px 12px;
+}
+.calling a {
+  color: white;
+}
+.calling a:visited {
+  color: white;
+}
+.rights {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.terms a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 15px;
+}
+.terms a:hover {
+  text-decoration: underline;
+}

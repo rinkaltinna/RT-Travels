@@ -1,0 +1,172 @@
+#navbar 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-size: 1rem;
+}
+#logo
+{
+    flex-direction: column;
+}
+#logo img
+{
+    height: 50px;
+    width: 50px;
+}
+#navbar ul
+{
+    flex-direction: column;
+    margin-top: 2px ;
+    margin-bottom: 15px;
+
+    
+}
+#navbar ul li
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#navbar ul li button
+{
+    margin: 10px;
+    
+}
+#button button
+{
+    padding: 6px 12px;
+    border-radius: 5px;
+    
+}
+#navbar ul li button a
+{
+    font-size: 1rem;
+}
+
+
+.burger {
+    display: block;
+  }
+  .h-nav {
+    height: 50px;
+  }
+  .v-class {
+    opacity: 0;
+  }
+  .logoblock {
+    display: flex;
+  }
+
+.name
+{
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+.photo img
+{
+    width: 90%;
+    height: auto;
+}
+.head
+{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 95%;
+}
+.type
+{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.para
+{
+    width: 80%;
+}
+.day img
+{
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+}
+.info
+{
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.footerlogo
+{
+    margin: 0px;
+    margin-top: 10px;
+    
+}
+.footerlogo img
+{
+    height: 60px;
+    width: 60px;
+    display: block;
+    margin: 0px auto;
+}
+footer>hr
+{
+    width: 94%;
+}
+.subscribe
+{
+    
+    margin: 10px 14px;
+}
+.subscribeinfo
+{
+
+    margin: 18px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.connect {
+    margin: 30px 0px 20px 0px;
+}
+.callus {
+    margin: 30px 0px 20px 0px;
+}
+.call
+{
+    margin-bottom: 0px;
+}
+.getemail
+{
+    display: flex;
+    justify-content: center;
+}
+.rights
+{
+    flex-direction: column-reverse;
+    padding: 10px 0px;
+}
+.terms a
+{
+    font-size: 1rem;
+    margin: 0px 5px;
+}
+.copy
+{
+    text-align: center;
+    margin: 5px 5px;
+    margin-top: 10px;
+}
+.getemail input
+{
+    padding: 6px 10px;
+
+}
+.getemail button
+{
+    padding: 6px 10px;
+}

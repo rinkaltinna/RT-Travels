@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "logo ul ul ul ul button";
+  background: #002b27;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  font-family: "Ysabeau Infant", sans-serif;
+  z-index: 1;
+  color: white;
+  
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+#logo img {
+  height: 70px;
+  width: 70px;
+
+  /* margin: 0px 19px; */
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+  /* justify-content: center; */
+  align-items: center;
+}
+#navbar ul li {
+  margin: 0px 19px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#navbar ul li a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 1px 2px black;
+}
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* position: relative;
+    left: 250px; */
+}
+#button button {
+  margin: 0px 8px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002b27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#button button:hover {
+  transform: scale(1.1);
+}
+
+#button button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+  position: absolute;
+  left: 2%;
+  top: 0px;
+  display: none;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  /* margin: 0px 19px; */
+}
+.burger
+{
+   position: absolute;
+   right: 5%;
+   top: 10px;
+   display: none;
+   cursor: pointer;
+}
+.line 
+{
+  width: 33px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 5px 3px;
+}
+
+#heading {
+  background-color: #054f48d4;
+
+  color: whitesmoke;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 3.5rem;
+  padding: 15px 45px;
+}
+.container {
+  width: 75%;
+  margin: 15px auto;
+  background: url('https://i.ibb.co/QHvH227/bali.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+}
+#feature {
+  display: flex;
+  justify-content: end;
+}
+#featuretour {
+  margin: 20px 20px;
+}
+#featuretour a {
+  text-decoration: none;
+  color: black;
+  background-color: whitesmoke;
+  font-size: 1.3rem;
+  padding: 8px 12px;
+  font-family: "Ysabeau Infant", sans-serif;
+  border-radius: 4px;
+}
+#plans {
+  display: flex;
+  width: 78%;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.image img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tourdetail a {
+  
+  color: black;
+  padding: 4px 8px;
+  
+}
+.tourdetail a:hover {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.764);
+  border-radius: 3px;
+  text-decoration: none;
+}
+#description a {
+  
+  color: whitesmoke;
+  padding: 4px 8px;
+}
+#description a:hover {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.margin {
+  margin-bottom: 8px;
+}
+#plan4 img {
+  width: 355.487px;
+  height: 237.25px;
+}
+#plan5 img {
+  width: 355.487px;
+  height: 237.25px;
+}
+#plan6 img {
+  width: 355.487px;
+  height: 237.25px;
+}
+#plan7 img {
+  width: 355.49px;
+  height: 237.25px;
+}
+#plan8 img {
+  width: 355.487px;
+  height: 237.25px;
+}
+
+#description {
+  color: whitesmoke;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 1.3rem;
+  padding-left: 30px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.plan {
+  height: 400px;
+  /* border: 2px solid red; */
+  width: 30%;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  align-self: start;
+}
+.tourdetail {
+  margin: 20px 0px 20px 15px;
+  font-size: 1.3rem;
+  font-family: "Ysabeau Infant", sans-serif;
+  text-align: center;
+}
+
+footer {
+  background-color: #002b27;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+footer > hr {
+  border: none;
+  border-top: 2px solid white;
+  width: 91%;
+  margin: auto;
+  text-align: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.footerlogo {
+  margin: 20px 0px 15px 20px;
+}
+.footerlogo img {
+  height: 80px;
+  width: 80px;
+  margin: 0px 0px -10px 20px;
+}
+.tagline {
+  font-size: 1rem;
+}
+.subscribe {
+  margin: 20px 0px 15px 20px;
+}
+.subscribeinfo {
+  width: 75%;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+.getemail input {
+  font-size: 1rem;
+
+  padding: 6px 20px;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+::placeholder {
+  color: white;
+}
+
+.getemail button {
+  margin: 0px 0px;
+  padding: 6px 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002b27);
+  color: white;
+  cursor: pointer;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+.getemail > button > a {
+  text-decoration: none;
+  color: white;
+}
+
+.connect {
+  margin: 20px 0px 15px 20px;
+}
+
+.follow {
+  font-size: 1.1rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.icons i {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.icons a {
+  color: white;
+}
+
+.callus {
+  margin: 20px 0px 15px 20px;
+}
+.call {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.calling {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.num {
+  padding: 0px 0px 0px 12px;
+}
+.calling a {
+  color: white;
+}
+.calling a:visited {
+  color: white;
+}
+.rights {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.terms a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 15px;
+}
+.terms a:hover {
+  text-decoration: underline;
+}

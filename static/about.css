@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Calistoga&family=Castoro+Titling&family=Pridi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "logo ul ul ul ul button";
+  background: #002b27;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  font-family: "Ysabeau Infant", sans-serif;
+  z-index: 1;
+  color: white;
+  
+}
+
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+#logo img {
+  height: 70px;
+  width: 70px;
+
+  /* margin: 0px 19px; */
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+  /* justify-content: center; */
+  align-items: center;
+}
+#navbar ul li {
+  margin: 0px 19px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#navbar ul li a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 1px 2px black;
+}
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* position: relative;
+  left: 250px; */
+}
+#button button {
+  margin: 0px 8px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002b27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#button button:hover {
+  transform: scale(1.1);
+}
+
+#button button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+  position: absolute;
+  left: 2%;
+  top: 0px;
+  display: none;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  /* margin: 0px 19px; */
+}
+.burger
+{
+   position: absolute;
+   right: 5%;
+   top: 10px;
+   display: none;
+   cursor: pointer;
+}
+.line 
+{
+  width: 33px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 5px 3px;
+}
+
+#aboutus {
+  background: url('https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?cs=srgb&dl=pexels-andrei-tanase-1271619.jpg&fm=jpg&_gl=1*19vvqzs*_ga*MTM4MTMzMTc0NC4xNjg2NjY4MTMx*_ga_8JE65Q40S6*MTY4OTM0MTYyMS4yMy4xLjE2ODkzNDE3NDkuMC4wLjA.') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+.container {
+  display: block;
+
+  width: 75%;
+  margin: 0px auto;
+  padding: 6rem 10px;
+  padding-bottom: 4rem;
+}
+#heading {
+  font-size: 3rem;
+  text-shadow: 3px 2px 2px black;
+  font-family: "Acme", sans-serif;
+}
+.container > p {
+  font-size: 1.3rem;
+  padding: 10px 0px;
+  width: 50%;
+  padding-right: 39px;
+  text-shadow: 2px 1px 2px black;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+#whyus {
+  margin: 2rem 2rem;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#para1 {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 1.2rem;
+}
+#para2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+#para3 {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 1.3rem;
+  padding: 0px 15rem;
+}
+
+#expert {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 20px 15px;
+}
+.box {
+  width: 20%;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+.title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 20px 0px;
+}
+.description {
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+.box > i {
+  font-size: 2.5rem;
+  color: #002b27;
+}
+
+#team
+{
+  padding-bottom: 40px;
+  background-color: whitesmoke;
+}
+
+#headteam {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 15px 0px;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#headintro {
+  text-align: center;
+  font-size: 1rem;
+  width: 50%;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  font-family: "Ysabeau Infant", sans-serif;
+  padding: 0px 3rem;
+}
+#ourteam {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0px auto;
+  justify-content: center;
+}
+.member {
+  width: 25%;
+  margin: 20px 40px;
+  height: 400px;
+}
+
+#member1 {
+  background: url('https://i.ibb.co/xS26py8/Sarah.jpg') no-repeat center center;
+  background-size: cover;
+  
+}
+#member2 {
+  background: url('https://i.ibb.co/4R1pZjs/Mark.jpg') no-repeat center center;
+  background-size: cover;
+}
+#member3 {
+  background: url('https://i.ibb.co/CHnGHLQ/Emily.jpg') no-repeat center center;
+  background-size: cover;
+}
+#member4 {
+  background: url('https://i.ibb.co/5G2hhjj/Alex.jpg') no-repeat center center;
+  background-size: cover;
+}
+#member5 {
+  background: url('https://i.ibb.co/THHS772/Michael.jpg') no-repeat center center;
+  background-size: cover;
+}
+#member6 {
+  background: url('https://i.ibb.co/1Zb5YS0/Sophia.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.intro
+{
+  margin-top: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.212);
+  border-radius: 15px;
+}
+
+
+.name
+{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding-top: 15px;
+  margin-left: 15px;
+}
+.role
+{
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: 800;
+  margin-left: 15px;
+}
+.work
+{
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.account
+{
+  margin-left: 15px;
+  padding-bottom: 15px;
+}
+.account>i
+{
+  margin: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+
+#support {
+  background: url('https://i.ibb.co/cxRkymh/supportbg.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 4rem 0rem;
+}
+.container1 {
+  display: block;
+
+  width: 80%;
+  margin: 0px auto;
+  padding: 6rem 10px;
+  padding-bottom: 4rem;
+}
+#heading1 {
+  font-size: 4rem;
+  text-shadow: 3px 2px 2px black;
+  font-family: "Acme", sans-serif;
+}
+.container1 > p {
+  font-size: 1.4rem;
+  padding: 10px 0px;
+  width: 40%;
+  padding-right: 39px;
+  text-shadow: 2px 1px 2px black;  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.container1>button
+{
+  margin: 15px 0px;
+  padding: 6px 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background: none;
+  color: whitesmoke;
+  cursor: pointer;
+  font-family: "Ysabeau Infant", sans-serif;
+  border: 2px solid whitesmoke;
+}
+.container1>button:hover{
+  background-color: whitesmoke;
+}
+.container1>button>a{
+text-decoration: none;
+color: whitesmoke;
+font-weight: 700;
+font-size: 1.2rem;
+}
+.container1>button>a:hover{
+  color: black;
+}
+
+footer {
+  background-color: #002b27;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+footer > hr {
+  border: none;
+  border-top: 2px solid white;
+  width: 91%;
+  margin: auto;
+  text-align: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.footerlogo {
+  margin: 20px 0px 15px 20px;
+}
+.footerlogo img {
+  height: 80px;
+  width: 80px;
+  margin: 0px 0px -10px 20px;
+}
+.tagline {
+  font-size: 1rem;
+}
+.subscribe {
+  margin: 20px 0px 15px 20px;
+}
+.subscribeinfo {
+  width: 75%;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+.getemail input {
+  font-size: 1rem;
+
+  padding: 6px 20px;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+::placeholder {
+  color: white;
+}
+
+.getemail button {
+  margin: 0px 0px;
+  padding: 6px 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002b27);
+  color: white;
+  cursor: pointer;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+.getemail > button > a {
+  text-decoration: none;
+  color: white;
+}
+
+.connect {
+  margin: 20px 0px 15px 20px;
+}
+
+.follow {
+  font-size: 1.1rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.icons i {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.icons a {
+  color: white;
+}
+
+.callus {
+  margin: 20px 0px 15px 20px;
+}
+.call {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.calling {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.num {
+  padding: 0px 0px 0px 12px;
+}
+.calling a {
+  color: white;
+}
+.calling a:visited {
+  color: white;
+}
+.rights {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.terms a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 15px;
+}
+.terms a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Calistoga&family=Castoro+Titling&family=Pridi&display=swap");
+
+
+
+
+
+body {
+    font-family: "Ysabeau Infant", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.thank-you-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #002B27;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.explore-link {
+    display: block;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #002B27;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.explore-link:hover {
+    background-color: #002B27;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.icon-link {
+    display: inline-block;
+    margin: 0 10px;
+    color: #002B27;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #002B27;
+}

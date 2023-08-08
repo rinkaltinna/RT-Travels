@@ -1,0 +1,280 @@
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  font-size: 1rem;
+  
+}
+#logo {
+  flex-direction: column;
+}
+#logo img {
+  height: 50px;
+  width: 50px;
+}
+
+#navbar ul {
+  flex-direction: column;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+#navbar ul li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+#navbar ul li button {
+  margin: 10px;
+}
+#button button {
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+#navbar ul li button a {
+  font-size: 1rem;
+}
+.burger {
+  display: block;
+}
+.h-nav {
+  height: 50px;
+}
+.v-class {
+  opacity: 0;
+}
+.logoblock {
+  display: flex;
+}
+#home {
+  padding: 10px;
+}
+.heading {
+  font-size: 1.5rem;
+  margin: 10px 0px;
+}
+#home p {
+  font-size: 1rem;
+  padding: 0px 15px;
+  margin: 15px 0px;
+}
+#button1 {
+  margin-bottom: 10px;
+  padding: 6px 12px;
+}
+#button1 a {
+  font-size: 1rem;
+}
+.box img {
+  width: 180px;
+  height: 100px;
+  border-radius: 10px;
+}
+.box {
+  flex-direction: column;
+  margin: 15px 25px;
+}
+#box2 {
+  flex-direction: column-reverse;
+}
+.para {
+  font-size: 1rem;
+  padding: 10px 10px;
+  text-shadow: 2px 1px 2px black;
+}
+#services {
+  background: linear-gradient(to bottom, #ca8166, #bf9370, #d6d8d7);
+}
+#services h2 {
+  font-size: 2.5rem;
+  padding: 10px 0px;
+}
+#sbox {
+  flex-direction: column;
+}
+.sbox {
+  margin: 20px 20px;
+  font-size: 1rem;
+}
+#sbox1 {
+  width: 88%;
+  height: 300px;
+}
+#sbox2 {
+  width: 88%;
+  height: 300px;
+}
+#sbox3 {
+  width: 88%;
+  height: 300px;
+}
+.sheading {
+  font-size: 1.5rem;
+  margin: 15px 0px;
+}
+.spara {
+  font-size: 1rem;
+  padding: 15px 30px;
+}
+
+#plans > h2 {
+  font-size: 2.3rem;
+  padding: 25px 0px;
+}
+#tour {
+  flex-direction: column;
+
+  align-items: center;
+  padding-bottom: 15px;
+}
+#allplans {
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+.tour {
+  width: 88%;
+  margin: 20px 0px;
+}
+#plans {
+  background: linear-gradient(to bottom, #6074bd, #677d56, #e7ce96);
+}
+
+#community > h2 {
+  font-size: 2rem;
+  padding: 10px 0px;
+}
+#story > h4 {
+  font-size: 2rem;
+  padding: 20px 0px;
+}
+#storyimg img {
+  height: 160px;
+  width: 260px;
+  display: block;
+  margin: 30px auto;
+  margin-top: 0px;
+}
+#storycon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#storypara {
+  font-size: 1.1rem;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+#stories {
+  flex-direction: column;
+  margin: 0px 10px;
+}
+.stories {
+  width: 88%;
+  font-size: 0rem;
+  margin: 20px auto;
+}
+.h4-primary {
+  font-size: 1.5rem;
+  margin: 15px 4px;
+  margin-bottom: 2px;
+}
+.h4-secondary {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.storycontent p {
+  font-size: 1rem;
+  padding: 10px 28px;
+}
+.readmore button {
+  margin: 15px 0px;
+  padding: 6px 15px;
+}
+#social {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#socialheading {
+  font-size: 2.5rem;
+  width: 100%;
+  margin: 20px 0px;
+  padding: 0px 37px;
+}
+#socialcontent {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#instaheading {
+  font-size: 2.5rem;
+}
+#instaphoto {
+  width: 85%;
+
+  margin: 20px auto;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.info {
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.footerlogo {
+  margin: 0px;
+  margin-top: 10px;
+}
+.footerlogo img {
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: 0px auto;
+}
+footer > hr {
+  width: 94%;
+}
+.subscribe {
+  margin: 10px 14px;
+}
+.subscribeinfo {
+  margin: 18px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.connect {
+  margin: 30px 0px 20px 0px;
+}
+.callus {
+  margin: 30px 0px 20px 0px;
+}
+.call {
+  margin-bottom: 0px;
+}
+.getemail {
+  display: flex;
+  justify-content: center;
+}
+.rights {
+  flex-direction: column-reverse;
+  padding: 10px 0px;
+}
+.terms a {
+  font-size: 1rem;
+  margin: 0px 5px;
+}
+.copy {
+  text-align: center;
+  margin: 5px 5px;
+  margin-top: 10px;
+}
+.getemail input {
+  padding: 6px 10px;
+}
+.getemail button {
+  padding: 6px 10px;
+}

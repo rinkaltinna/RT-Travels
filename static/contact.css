@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Calistoga&family=Castoro+Titling&family=Pridi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+#navbar {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "logo ul ul ul ul button";
+  background: #002b27;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  font-family: "Ysabeau Infant", sans-serif;
+  z-index: 1;
+  color: white;
+  
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+#logo img {
+  height: 70px;
+  width: 70px;
+
+  /* margin: 0px 19px; */
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+  /* justify-content: center; */
+  align-items: center;
+}
+#navbar ul li {
+  margin: 0px 19px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+#navbar ul li a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 1px 2px black;
+}
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* position: relative;
+  left: 250px; */
+}
+#button button {
+  margin: 0px 8px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002b27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#button button:hover {
+  transform: scale(1.1);
+}
+
+#button button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau Infant", sans-serif;
+  position: absolute;
+  left: 2%;
+  top: 0px;
+  display: none;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  /* margin: 0px 19px; */
+}
+.burger
+{
+   position: absolute;
+   right: 5%;
+   top: 10px;
+   display: none;
+   cursor: pointer;
+}
+.line 
+{
+  width: 33px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 5px 3px;
+}
+
+.container {
+  background: url('https://i.ibb.co/RBPZGnJ/contact.jpg') no-repeat center center;
+  background-size: cover;
+
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  color: white;
+}
+#heading {
+  font-weight: bold;
+  font-size: 3rem;
+  padding-left: 30px;
+  font-family: "Acme", sans-serif;
+  text-shadow: 3px 2px 3px black;
+}
+
+#card {
+  display: flex;
+
+  margin-top: 15px;
+}
+.cards {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+  background: linear-gradient(90deg, #008552 0%, #0d2d21 100%);
+  padding: 30px;
+  margin: 10px 30px;
+  border-radius: 10px;
+}
+.cardhead {
+  font-size: 2rem;
+  margin-top: 15px;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-weight: bold;
+}
+.cardpara {
+  font-size: 1.2rem;
+  margin-top: 8px;
+  font-family: "Ysabeau Infant", sans-serif;
+  text-align: justify;
+}
+.cardbutton {
+  margin-top: 10px;
+}
+.cardbutton > button {
+  margin: 0px 8px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002b27);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#card1button > button {
+  padding: 8px 26px;
+}
+.cardbutton > button > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.containerform {
+  display: flex;
+}
+.left {
+  width: 30%;
+  color: whitesmoke;
+  margin: 25px 10px;
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  font-family: "Ysabeau Infant", sans-serif;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(0%2c 43%2c 39%2c 1)'%3e%3c/rect%3e%3cpath d='M1069.0119365012936 234.89664861664025L1145.5224960552719 224.14379071337717 1091.1379294233882 114.75438033404147z' fill='rgba(4%2c 89%2c 53%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M290.957%2c92.371C309.911%2c91.105%2c325.037%2c79.241%2c335.559%2c63.425C347.748%2c45.104%2c360.74%2c22.791%2c350.044%2c3.56C339.193%2c-15.95%2c313.28%2c-16.572%2c290.957%2c-16.77C268.127%2c-16.973%2c242.431%2c-16.672%2c230.025%2c2.494C216.857%2c22.837%2c221.086%2c50.105%2c234.684%2c70.163C246.812%2c88.052%2c269.392%2c93.812%2c290.957%2c92.371' fill='rgba(4%2c 89%2c 53%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M772.6471147048638 26.37668073375847L716.3807932727657 78.84587431066079 823.2177443541682 137.0107596703568z' fill='rgba(4%2c 89%2c 53%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-103.83 267.09 a164.63 164.63 0 1 0 329.26 0 a164.63 164.63 0 1 0 -329.26 0z' fill='rgba(4%2c 89%2c 53%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1349.190150156482 110.80633578020692L1239.9086400308195 128.11482659928015 1320.5121313222608 283.3828463782376z' fill='rgba(4%2c 89%2c 53%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M482.75 523.37 a162.57 162.57 0 1 0 325.14 0 a162.57 162.57 0 1 0 -325.14 0z' fill='rgba(4%2c 89%2c 53%2c 1)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+.right {
+  width: 70%;
+
+  background-color: whitesmoke;
+  margin: 25px 10px;
+
+  border-radius: 10px;
+
+  color: black;
+  font-family: "Ysabeau Infant", sans-serif;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+.lefthead {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-left: 30px;
+  padding-top: 65px;
+  margin-bottom: 10px;
+}
+.support {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-right: 44px;
+}
+.support > a {
+  color: white;
+  text-decoration: none;
+}
+.support > a:hover {
+  text-decoration: underline;
+}
+.mobile {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.contacticon {
+  margin-left: 30px;
+  margin-top: 115px;
+  padding-bottom: 50px;
+}
+.contacticon > a {
+  color: white;
+  margin: 20px;
+}
+.location {
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 1.1rem;
+}
+.location p {
+  margin: 4px 0px;
+}
+
+#form {
+  display: grid;
+  grid-template-areas:
+    "firstname secondname"
+    "email phone"
+    "message message";
+  margin: 30px;
+  margin-left: 40px;
+  margin-top: 45px;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+::placeholder
+{
+  color: black;
+}
+#formhead {
+  margin-left: 13rem;
+  margin-top: 65px;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.forminput>input {
+  width: 70%;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 2rem;
+  padding: 7px 7px;
+  border: 2px solid black;
+  background: none;
+  outline: none;
+  border-radius: 10px;
+  font-family: "Ysabeau Infant", sans-serif;
+  color: black;
+}
+.forminput>textarea {
+  width: 85%;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 2rem;
+  padding: 7px 7px;
+  border: 2px solid black;
+  background: none;
+  outline: none;
+  border-radius: 10px;
+  font-family: "Ysabeau Infant", sans-serif;
+  color: black;
+}
+#form>button {
+  width: 30%;
+  padding: 8px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid black;
+  background: none;
+  color: black;
+  font-size: 1.2rem;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#form>button:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+#firstname {
+  grid-area: firstname;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+#secondname {
+  grid-area: secondname;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+#Email {
+  grid-area: email;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+#phone {
+  grid-area: phone;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+#message {
+  grid-area: message;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #002B27;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+footer > hr {
+  border: none;
+  border-top: 2px solid white;
+  width: 91%;
+  margin: auto;
+  text-align: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.footerlogo {
+  margin: 20px 0px 15px 20px;
+}
+.footerlogo img {
+  height: 80px;
+  width: 80px;
+  margin: 0px 0px -10px 20px;
+}
+.tagline {
+  font-size: 1rem;
+}
+.subscribe {
+  margin: 20px 0px 15px 20px;
+}
+.subscribeinfo {
+  width: 75%;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+.getemail input {
+  font-size: 1rem;
+
+  padding: 6px 20px;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.getemail input::placeholder {
+  color: whitesmoke;
+}
+
+.getemail button {
+  margin: 0px 0px;
+  padding: 6px 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #045935, #002B27);
+  color: white;
+  cursor: pointer;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+.getemail > button > a {
+  text-decoration: none;
+  color: white;
+}
+
+.connect {
+  margin: 20px 0px 15px 20px;
+}
+
+.follow {
+  font-size: 1.1rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.icons i {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.icons a {
+  color: white;
+}
+
+.callus {
+  margin: 20px 0px 15px 20px;
+}
+.call {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.calling {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.num {
+  padding: 0px 0px 0px 12px;
+}
+.calling a {
+  color: white;
+}
+.calling a:visited {
+  color: white;
+}
+.rights {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.terms a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 15px;
+}
+.terms a:hover {
+  text-decoration: underline;
+}
